@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HelmVision Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for HelmVision, an independent Android client for self-hosted Frigate NVR servers.">
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; margin: 0; background: #fff; color: #202124; }
+    main { max-width: 820px; margin: 0 auto; padding: 40px 22px 64px; }
+    h1 { line-height: 1.2; margin-bottom: 0.4rem; }
+    h2 { margin-top: 2rem; line-height: 1.3; }
+    h3 { margin-top: 1.4rem; line-height: 1.35; }
+    .meta { margin: 0.25rem 0; }
+    .notice { margin-top: 1.25rem; padding: 14px 16px; background: #f6f8fa; border-radius: 8px; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>HelmVision Privacy Policy</h1>
+  <p class="meta"><strong>Effective date:</strong> August 26, 2026</p>
+  <p class="meta"><strong>Developer/Publisher:</strong> Jose Gasca</p>
+  <p class="meta"><strong>Privacy and support contact:</strong> <a href="mailto:jgasca30@gmail.com">jgasca30@gmail.com</a></p>
+
+  <p class="notice">HelmVision is an independent Android client for a user-selected, self-hosted Frigate NVR server. It is not affiliated with or endorsed by Frigate, Inc.</p>
+
+  <h2>Overview</h2>
+  <p>HelmVision is designed to connect directly from the Android device to the Frigate server address configured by the user. The app does not require or operate a developer-hosted user account, cloud relay, analytics service, advertising service, or subscription service.</p>
+  <p>The developer does not operate a service that receives copies of the user's Frigate credentials, camera video, recordings, events, or diagnostic logs as part of normal app operation.</p>
+
+  <h2>Information the app handles</h2>
+  <h3>Frigate server address</h3>
+  <p>The user enters the URL or network address of the Frigate server they want the app to access. The server address is stored locally on the Android device so the app can reconnect later.</p>
+
+  <h3>Frigate login credentials</h3>
+  <p>The user may enter a Frigate username and password. These credentials are stored locally on the Android device using the app's Android credential-protection implementation. Optional biometric or device-credential protection can be enabled by the user.</p>
+  <p>HelmVision does not send Frigate credentials to the developer. Credentials are used to authenticate directly with the Frigate server configured by the user.</p>
+
+  <h3>Camera and Frigate content</h3>
+  <p>When connected to a Frigate server, the app may display or process content provided by that server, including camera images and video, recordings, review and event information, camera names, system information, and export or download content.</p>
+  <p>This content is exchanged between the Android device and the user-configured Frigate server as required for app functionality. The developer does not operate a cloud service that receives copies of this content.</p>
+
+  <h3>Diagnostic information</h3>
+  <p>HelmVision can create diagnostic logs for troubleshooting. Diagnostic logging can be controlled from the app's native settings. Logs are stored on the Android device and are not automatically uploaded to the developer.</p>
+  <p>A user may explicitly choose to export or share a diagnostic log through Android's share interface. In that case, the user chooses the destination. The app attempts to redact credentials and other secrets from diagnostic output, but users should still review diagnostic files before sharing them.</p>
+
+  <h3>Downloads and exports</h3>
+  <p>Frigate exports or other supported downloads may be saved to the Android device at the user's request. These files originate from the user-configured Frigate server. If the user later shares those files with another application or service, that sharing occurs at the user's direction.</p>
+
+  <h2>Network access and security</h2>
+  <p>HelmVision uses network access to communicate with the Frigate server selected by the user. Depending on the user's configuration, this may be a local-network address, VPN address, private DNS name, or remote HTTPS address.</p>
+  <p>The app supports HTTPS and relies on Android's trusted system or user-installed certificate authorities as configured for the app. HelmVision does not bypass TLS certificate errors.</p>
+  <p>The app can also support a user-configured HTTP Frigate address. HTTP traffic is not protected by TLS. The app warns users about this risk, and HTTPS is recommended whenever available.</p>
+  <p>The app uses Android platform security facilities for local credential protection and optional biometric or device-credential authentication. App content is hidden from Android Recents/Overview snapshots to reduce accidental disclosure of camera imagery.</p>
+  <p>No security mechanism can guarantee absolute protection. Users are responsible for securing their Frigate server, network access, Android device, credentials, certificates, and exported files.</p>
+
+  <h2>Android permissions</h2>
+  <p>HelmVision may request or use Android permissions needed for its functionality, including:</p>
+  <ul>
+    <li>Internet and network access to communicate with the configured Frigate server.</li>
+    <li>Local-network access on Android versions that require explicit permission for connections to local or private network devices.</li>
+    <li>Biometric or device-credential APIs when the user enables app lock.</li>
+  </ul>
+  <p>HelmVision does not request permission to install unknown applications in the current Play-distribution architecture.</p>
+
+  <h2>Android WebView</h2>
+  <p>The Frigate user interface is displayed inside Android System WebView. The WebView loads the interface from the Frigate server configured by the user. Frigate server functionality and content served by the user's Frigate installation are outside the developer-operated infrastructure for HelmVision.</p>
+  <p>The app may store Frigate session cookies and WebView site data locally on the device to maintain the user's authenticated session. Native settings provide controls to clear the WebView cache, clear the Frigate session, or reset Frigate WebView data.</p>
+
+  <h2>Data collection and sharing by the developer</h2>
+  <p>HelmVision does not include developer-operated advertising or analytics in the current release and does not sell user data.</p>
+  <p>The developer does not intentionally collect or receive Frigate login credentials, camera content, recordings, events, server configuration, or diagnostic logs during normal app operation.</p>
+  <p>Information can leave the device when required to communicate with the user-selected Frigate server or when the user explicitly directs Android to export, share, download, or open content with another application or service. Those destinations are selected or configured by the user and are not operated by the developer unless explicitly stated otherwise.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>Server configuration, credentials, session information, app preferences, and diagnostic logs remain on the Android device until they are cleared by the user, removed by an app reset or uninstall, or otherwise deleted by Android according to platform behavior.</p>
+  <p>The app's native settings include controls to clear saved credentials, clear Frigate WebView cache, session, and data, and clear diagnostic logs.</p>
+  <p>Frigate server-side retention of recordings, events, snapshots, user accounts, and other server data is controlled by the user's Frigate deployment and is not managed by HelmVision or by the developer.</p>
+  <p>HelmVision does not create or operate a developer-hosted user account. Any Frigate account used with the app belongs to the user's own Frigate server and must be managed or deleted through that server by the user or its administrator.</p>
+
+  <h2>Children</h2>
+  <p>HelmVision is a technical client for a self-hosted video-security system and is not designed or marketed specifically for children.</p>
+
+  <h2>Third-party and user-selected services</h2>
+  <p>HelmVision relies on Android platform components, including Android System WebView, and communicates with the Frigate server selected by the user. A user's Frigate server, network provider, VPN provider, certificate authority, external links, or apps selected through Android's sharing interface may have their own privacy practices. The developer does not control those third-party or user-selected services.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>This policy may be updated when HelmVision functionality, data practices, dependencies, or legal or Google Play requirements change. The effective date at the top of this policy will be updated when material changes are published.</p>
+
+  <h2>Contact</h2>
+  <p>For privacy questions, support requests, or questions about this policy, contact:</p>
+  <p><strong>Jose Gasca</strong><br><strong>Email:</strong> <a href="mailto:jgasca30@gmail.com">jgasca30@gmail.com</a></p>
+</main>
+</body>
+</html>
