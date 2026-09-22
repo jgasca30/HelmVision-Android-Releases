@@ -19,14 +19,14 @@
 <body>
 <main>
   <h1>HelmVision Privacy Policy</h1>
-  <p class="meta"><strong>Effective date:</strong> August 26, 2026</p>
+  <p class="meta"><strong>Effective date:</strong> September 22, 2026</p>
   <p class="meta"><strong>Developer/Publisher:</strong> HelmVision</p>
   <p class="meta"><strong>Privacy and support contact:</strong> <a href="mailto:jgasca30@gmail.com">jgasca30@gmail.com</a></p>
 
   <p class="notice">HelmVision is an independent Android client for a user-selected, self-hosted Frigate NVR server. It is not affiliated with or endorsed by Frigate, Inc.</p>
 
   <h2>Overview</h2>
-  <p>HelmVision is designed to connect directly from the Android device to the Frigate server address configured by the user. The app does not require or operate a developer-hosted user account, cloud relay, analytics service, advertising service, or subscription service.</p>
+  <p>HelmVision is designed to connect directly from the Android device to the Frigate server address configured by the user. The app does not require or operate a developer-hosted user account, cloud relay, or subscription service. HelmVision includes banner advertising provided through Google AdMob.</p>
   <p>The developer does not operate a service that receives copies of the user's Frigate credentials, camera video, recordings, events, or diagnostic logs as part of normal app operation.</p>
 
   <h2>Information the app handles</h2>
@@ -41,12 +41,22 @@
   <p>When connected to a Frigate server, the app may display or process content provided by that server, including camera images and video, recordings, review and event information, camera names, system information, and export or download content.</p>
   <p>This content is exchanged between the Android device and the user-configured Frigate server as required for app functionality. The developer does not operate a cloud service that receives copies of this content.</p>
 
+  <h3>Microphone and two-way audio</h3>
+  <p>When the user activates Frigate's two-way-talk feature, HelmVision may request Android microphone permission and allow the configured Frigate WebView origin to capture microphone audio. Microphone access is requested on demand for two-way talk.</p>
+  <p>Microphone audio is sent to the user-configured Frigate server and camera infrastructure as required for the requested two-way communication. HelmVision does not send microphone audio to the developer.</p>
+
   <h3>Diagnostic information</h3>
   <p>HelmVision can create diagnostic logs for troubleshooting. Diagnostic logging can be controlled from the app's native settings. Logs are stored on the Android device and are not automatically uploaded to the developer.</p>
   <p>A user may explicitly choose to export or share a diagnostic log through Android's share interface. In that case, the user chooses the destination. The app attempts to redact credentials and other secrets from diagnostic output, but users should still review diagnostic files before sharing them.</p>
 
   <h3>Downloads and exports</h3>
   <p>Frigate exports or other supported downloads may be saved to the Android device at the user's request. These files originate from the user-configured Frigate server. If the user later shares those files with another application or service, that sharing occurs at the user's direction.</p>
+
+  <h2>Advertising, consent, and Google Mobile Ads</h2>
+  <p>HelmVision uses the Google Mobile Ads SDK (AdMob) to display banner advertisements. The app also uses Google's User Messaging Platform (UMP) to obtain or manage advertising/privacy choices where required.</p>
+  <p>According to Google's documentation for the Mobile Ads SDK used by HelmVision, the SDK may automatically collect and share data such as the device IP address, user product interactions, diagnostic information, and device or account identifiers for advertising, analytics, and fraud-prevention purposes. This data is handled by Google under Google's terms and privacy practices and is transmitted using TLS.</p>
+  <p>HelmVision does not intentionally provide Frigate usernames, passwords, camera video, recordings, server configuration, or diagnostic-log contents to Google Mobile Ads as advertising request parameters.</p>
+  <p>Advertising identifiers and ad personalization are subject to the device's settings, applicable consent choices, Google Mobile Ads behavior, and applicable law. Users may also have controls provided by Android, Google, or UMP.</p>
 
   <h2>Network access and security</h2>
   <p>HelmVision uses network access to communicate with the Frigate server selected by the user. Depending on the user's configuration, this may be a local-network address, VPN address, private DNS name, or remote HTTPS address.</p>
@@ -60,16 +70,17 @@
   <ul>
     <li>Internet and network access to communicate with the configured Frigate server.</li>
     <li>Local-network access on Android versions that require explicit permission for connections to local or private network devices.</li>
+    <li>Microphone access, requested on demand when the user activates Frigate two-way talk.</li>
     <li>Biometric or device-credential APIs when the user enables app lock.</li>
   </ul>
   <p>HelmVision does not request permission to install unknown applications in the current Play-distribution architecture.</p>
 
   <h2>Android WebView</h2>
-  <p>The Frigate user interface is displayed inside Android System WebView. The WebView loads the interface from the Frigate server configured by the user. Frigate server functionality and content served by the user's Frigate installation are outside the developer-operated infrastructure for HelmVision.</p>
+  <p>The Frigate user interface is displayed inside Android System WebView. The WebView loads the interface from the Frigate server configured by the user. Frigate server functionality and content served by the user's Frigate installation are outside the developer-operated infrastructure for HelmVision. HelmVision grants WebView microphone capture only to the configured Frigate origin and only after Android microphone permission is available.</p>
   <p>The app may store Frigate session cookies and WebView site data locally on the device to maintain the user's authenticated session. Native settings provide controls to clear the WebView cache, clear the Frigate session, or reset Frigate WebView data.</p>
 
   <h2>Data collection and sharing by the developer</h2>
-  <p>HelmVision does not include developer-operated advertising or analytics in the current release and does not sell user data.</p>
+  <p>HelmVision includes Google AdMob banner advertising. Google Mobile Ads may collect and share data as described in the advertising section above. HelmVision does not sell user data.</p>
   <p>The developer does not intentionally collect or receive Frigate login credentials, camera content, recordings, events, server configuration, or diagnostic logs during normal app operation.</p>
   <p>Information can leave the device when required to communicate with the user-selected Frigate server or when the user explicitly directs Android to export, share, download, or open content with another application or service. Those destinations are selected or configured by the user and are not operated by the developer unless explicitly stated otherwise.</p>
 
@@ -83,7 +94,7 @@
   <p>HelmVision is a technical client for a self-hosted video-security system and is not designed or marketed specifically for children.</p>
 
   <h2>Third-party and user-selected services</h2>
-  <p>HelmVision relies on Android platform components, including Android System WebView, and communicates with the Frigate server selected by the user. A user's Frigate server, network provider, VPN provider, certificate authority, external links, or apps selected through Android's sharing interface may have their own privacy practices. The developer does not control those third-party or user-selected services.</p>
+  <p>HelmVision relies on Android platform components, including Android System WebView, and on Google services used for advertising and consent management, including Google AdMob and UMP. HelmVision also communicates with the Frigate server selected by the user. A user's Frigate server, network provider, VPN provider, certificate authority, external links, or apps selected through Android's sharing interface may have their own privacy practices. The developer does not control those third-party or user-selected services.</p>
 
   <h2>Changes to this policy</h2>
   <p>This policy may be updated when HelmVision functionality, data practices, dependencies, or legal or Google Play requirements change. The effective date at the top of this policy will be updated when material changes are published.</p>
