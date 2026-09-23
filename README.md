@@ -8,7 +8,7 @@ HelmVision is not affiliated with or endorsed by Frigate, Inc. `Frigate` is used
 
 - Product: **HelmVision**
 - Android package: `app.helmvision.android`
-- Current validated direct-release baseline: **0.7.10 / versionCode 83**
+- Current validated direct-release baseline: **0.7.11 / versionCode 84**
 - Private source repository: `jgasca30/HelmVision-Android`
 
 Future HelmVision direct-distribution APK releases will be published here. Release assets use names such as:
@@ -21,7 +21,7 @@ Historical pre-HelmVision releases remain preserved in the legacy release reposi
 
 The public HelmVision privacy policy is published from this repository through GitHub Pages at:
 
-`https://jgasca30.github.io/HelmVision-Android-Releases/privacy-policy.html`
+`https://jgasca30.github.io/privacy-policy.html`
 
 The legacy `Frigate-Android-Releases` repository remains online for historical compatibility and policy hosting.
 
